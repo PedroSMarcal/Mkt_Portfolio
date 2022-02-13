@@ -1,0 +1,48 @@
+CREATE TABLE tb_user(
+IdUser		INTEGER,
+CellPhone	INTEGER,
+Email		VARCHAR(60),
+ImageProfile	VARCHAR(60),
+CONSTRAINT pk_tb_user_IdUser 
+	PRIMARY KEY (IdUser);
+);
+
+CREATE TABLE tb_skills(
+IdSkills	INTEGER,
+Description		VARCHAR(150),
+SkillLevel	INTEGER, 
+SkillName	VARCHAR(60),
+Active		BOOLEAN,
+IdUser		INTEGER,
+CONSTRAINT pk_tb_skills_IdSkills 
+	PRIMARY KEY (IdSkills),
+CONSTRAINT fk_tb_skills_IdUser_tb_user_IdUser
+	FOREIGN KEY (IdUser) REFERENCES tb_user(IdUser)
+);
+
+CREATE TABLE tb_social_media(
+IdSocialMedia		INTEGER,
+Name			VARCHAR(60),
+Description		VARCHAR(150),
+URL			VARCHAR(60),
+Active			BOOLEAN,
+IdUser			INTEGER,
+CONSTRAINT pk_tb_social_media_IdSocialMedia 
+	PRIMARY KEY (IdSocialMedia),
+CONSTRAINT fk_tb_social_media_IdUser_tb_user_IdUser
+	FOREIGN KEY (IdUser) REFERENCES tb_user(IdUser)
+);
+
+CREATE TABLE tb_campaigns(
+IdCampaigns		INTEGER,
+Description		VARCHAR(150),
+AdmissionDate		DATE,
+MediaFile		VARCHAR(60),
+URL			VARCHAR(60),
+Active			BOOLEAN,
+IdUser			INTEGER, 
+CONSTRAINT pk_tb_campaigns_IdCampaigns
+	PRIMARY KEY (IdCampaigns),
+CONSTRAINT fk_tb_campaigns_IdUser_tb_user_IdUser
+	FOREIGN KEY IdUser REFERENCES tb_user(IdUser)
+);
