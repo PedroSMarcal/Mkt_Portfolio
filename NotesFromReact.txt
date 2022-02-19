@@ -1,0 +1,40 @@
+BoilerPlate = Template de Codigo que podem ser utilizadas para construção de aplicações  com pouca ou nenhuma alteração;
+
+Melhores Opções para gera um app em react 
+	Vite ou SnowPack
+
+Iniciando o template com o vite:
+	yarn create vite frontReact --template react-ts
+
+--
+React sempre tem um HTML que será o core, e dentro dele sempre tem uma div="root";
+
+no main.tsx ele possui um função chamada render que ira renderizar o <App /> dentro do HTML core;
+
+<App /> = Components
+------
+Components são uma forma de quebrar a aplicação em diversos pedaços para melhor manutenção;
+
+paga o nome do component e coloca como uma Tag HTML, sempre ser o component em maisuculo
+
+Component uma função que retorna HTML;
+------
+Propriedades = pode passar um atributo para o component;
+
+Contudo deve ser definido no proprio component o tipo de atributo a ser passado;
+
+Para inserir codigo Js dentro do HTML se utiliza {}
+------
+Estado = Para Deixar a visualização do usuario mais ativa, se utiliza o conceito de estado;
+
+useState = cria uma variavel monitorada pelo Component, quando tal muda seu valor logo ele será remontado na tela;
+
+Sempre Buscar por Desestruturação;
+
+------------- LEMBRETES -----------
+Com o typescript voce sempre tem que lembrar de retornar a tipagem do objeto;
+
+Para definir uma variavel opcional se define com o ?: na tipagem da classe
+
+Sempre Definir constantes e funções fora do return mas dentro da classe que ira retornar ou component
+
