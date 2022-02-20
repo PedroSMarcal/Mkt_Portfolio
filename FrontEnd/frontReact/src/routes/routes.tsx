@@ -4,15 +4,14 @@ import {
     Route
 } from 'react-router-dom'
 
-import Cart from '../pages/Cart'
-import { Catalog } from '../pages/Catalog'
+import PageLand from '../pages/PageLand'
 
 export function AppRoutes(){
     return (
         <Router>
             <Routes>
-                <Route path="/catalog" element={<Catalog />} />
-                <Route path="/cart" element={<Cart />} />
+                {/* <Route path="/cart" element={<Cart />} /> */}
+                <Route path="/" element={<PageLand />}/>
             </Routes>
         </Router>
     )
