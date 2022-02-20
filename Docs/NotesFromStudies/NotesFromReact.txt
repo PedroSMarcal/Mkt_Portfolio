@@ -1,0 +1,82 @@
+BoilerPlate = Template de Codigo que podem ser utilizadas para construção de aplicações  com pouca ou nenhuma alteração;
+
+Melhores Opções para gera um app em react 
+	Vite ou SnowPack
+
+Iniciando o template com o vite:
+	yarn create vite frontReact --template react-ts
+
+--
+React sempre tem um HTML que será o core, e dentro dele sempre tem uma div="root";
+
+no main.tsx ele possui um função chamada render que ira renderizar o <App /> dentro do HTML core;
+
+<App /> = Components
+------
+Components são uma forma de quebrar a aplicação em diversos pedaços para melhor manutenção;
+
+paga o nome do component e coloca como uma Tag HTML, sempre ser o component em maisuculo
+
+Component uma função que retorna HTML;
+------
+Propriedades = pode passar um atributo para o component;
+
+Contudo deve ser definido no proprio component o tipo de atributo a ser passado;
+
+Para inserir codigo Js dentro do HTML se utiliza {}
+------
+Estado = Para Deixar a visualização do usuario mais ativa, se utiliza o conceito de estado;
+
+useState = cria uma variavel monitorada pelo Component, quando tal muda seu valor logo ele será remontado na tela;
+
+Sempre Buscar por Desestruturação;
+
+Imutabilidade -> Nunca repoe o valor de uma variavel
+
+-------
+Estilização = Tem das formas de estilização, sendo uma delas a padrão na qual inserimos um arquivo separado e importamos, ou na propria tag abrindo usando style={{}}, quando entre dois colchetes o JS ira te auxiliar na construção do CSS in JS;
+
+-------
+Roteamento -> React Router -> biblioteca para gerar rotas no react, instalar a dependencia com:
+	yarn add react-router-dom  OU
+	npm install react-router-dom
+
+Gerar um arquivo routes.tsx, e nele nós utilizamos alguns que irão fazer este controle de rotas para nós
+
+'''
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route
+} from 'react-router-dom'
+'''
+
+e no app vamos importar todos os componentes do React Ali
+
+------------- LEMBRETES -----------
+Com o typescript voce sempre tem que lembrar de retornar a tipagem do objeto;
+
+Para definir uma variavel opcional se define com o ?: na tipagem da classe
+
+Sempre Definir constantes e funções fora do return mas dentro da classe que ira retornar ou component
+
+Bibliotecas mais famosas para css no js -> 
+	styled components
+	stitches = stitches.dev - yarn add @stitches/react
+ - 		   radix.ui.com - npm install @radix-ui/react-popover@latest -E
+
+Data Fetching -> Como sua aplicações busca e transmite de api externa:
+	React Query;
+	GraphQL(Mais carinho) -> uRQL, Apollo Client, Relay;
+
+State Management -> Ter uma forma de gerir dados complexos entre varios componentes
+	Keep it Simple (Context + Reducer)
+	Zustand
+
+Testing -> Teste para o React
+	Testing Library (Testes unitarios, funcionamento dos componentes)
+	Cypress (Testes end-to-end, simulação de uso do usuario)
+
+Framworks -> 
+	Next.js
+	Remix (Abordagens diferentes para soluções do react fabio ventoveri)
