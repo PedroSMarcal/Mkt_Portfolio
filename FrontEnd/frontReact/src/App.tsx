@@ -1,6 +1,8 @@
 import { AppRoutes } from './routes/routes';
+import { globalStyles } from './styles/global'
 
-function App() {    
+function App() { 
+  globalStyles();   
   return (
     <AppRoutes />
     )
