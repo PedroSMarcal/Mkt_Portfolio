@@ -1,11 +1,12 @@
 import FooterMenu from '../../components/PageElements/FooterMenu'
+import NavBar from '../../components/PageElements/NavMenu'
 import { Container } from './styled'
 
 export default function PageLand(){ 
     return (
         <Container>
-            
-            <FooterMenu />
+            <NavBar />
+            {/* <FooterMenu /> */}
         </Container>
     )
     

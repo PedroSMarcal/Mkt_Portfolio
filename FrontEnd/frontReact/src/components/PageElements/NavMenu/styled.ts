@@ -1,2 +1,5 @@
-import { styled } from "@stitches/react";
+import { createStitches } from "@stitches/core";
 
+export const { css } = createStitches({
+    
+})
