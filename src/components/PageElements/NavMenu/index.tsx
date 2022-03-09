@@ -1,31 +1,16 @@
+import { Link } from 'react-router-dom'
 import { nav } from './styled'
 
 export default function NavBar(){
     return (
         <>
             <nav className={nav({variant:  'yellow'})}>
-                <h2 >Landing Page</h2>
-                <h2>About Me</h2>
-                <h2>Portfolio</h2>
-                <h2>Skills</h2>
-                <h2>Contact</h2>
+                <Link to={'/'}>Landing Page</Link>
+                <Link to={'/about'}>About Me</Link>
+                <Link to={'/portfolio'}>Portfolio</Link>
+                <Link to={'/skills'}>Skills</Link>
+                <Link to={'/login'}>Login</Link>
             </nav>
         </>
-
     )
-
 }   
-
-/**
-// Definir uma tipagem para o component 
-// type TweetProps = {
-//     text?: string;
-// }
-
-// export function Tweet(props: TweetProps){
-//     return (
-//         <p>{props.text}</p>
-
-//     );
-// }
- */

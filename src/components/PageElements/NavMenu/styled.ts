@@ -13,6 +13,12 @@ export const { css } = createStitches({
             ...sand
         }
     },
+    media: {
+        bp1: '(min-width: 640px)',
+        bp2: '(min-width: 768px)',
+        bp3: '(min-width: 1024px)',
+    },
+    
 });
 
 export const nav = css({
@@ -21,19 +27,15 @@ export const nav = css({
             yellow: {
                 backgroundColor: '$yellow3',
                 color: '$yellow12',
-                '&:hover': {
-                    backgroundColor: '$yaellow4'
-                }
             },
+
             gray: {
                 backgroundColor: '$sand3',
                 color: '$sand12',
-                '&:hover': {
-                    backgroundColor: '$sand4'
-                }
             }
         },
     },
+    
 })
 
 //https://www.youtube.com/watch?v=r11FflkQqJs&ab_channel=FelipeRocha%E2%80%A2dicasparadevs
