@@ -1,10 +1,15 @@
 import React from "react"
+import FooterMenu from "../../components/PageElements/FooterMenu"
+import NavBar from "../../components/PageElements/NavMenu"
+import { AboutStyle } from "./styled"
 
 export default function PageLand(){ 
     return (
-        <>
-            <h1>About Me</h1>
-        </>
+        <AboutStyle>
+            <NavBar />
+
+            <FooterMenu />
+        </AboutStyle>
     )
     
 }

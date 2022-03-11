@@ -1,16 +1,27 @@
-import { Link } from 'react-router-dom'
-import { nav } from './styled'
+import { css } from '@stitches/core'
+import { NavLink } from 'react-router-dom'
+import { NavStyle } from './styled'
 
 export default function NavBar(){
     return (
-        <>
-            <nav className={nav({variant:  'yellow'})}>
-                <Link to={'/'}>Landing Page</Link>
-                <Link to={'/about'}>About Me</Link>
-                <Link to={'/portfolio'}>Portfolio</Link>
-                <Link to={'/skills'}>Skills</Link>
-                <Link to={'/login'}>Login</Link>
+        <NavStyle>
+            <nav>
+                <li>
+                    <NavLink to={'/'}>Landing Page</NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/about'}>About Me</NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/portfolio'}>Portfolio</NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/skills'}>Skills</NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/login'}>Login</NavLink>
+                </li>
             </nav>
-        </>
+        </NavStyle>
     )
 }   

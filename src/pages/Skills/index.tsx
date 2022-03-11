@@ -1,9 +1,14 @@
 import React from "react";
+import FooterMenu from "../../components/PageElements/FooterMenu";
+import NavBar from "../../components/PageElements/NavMenu";
+import { SkillStyles } from "./style";
 
 export default function(){
     return (
-        <>
-            <h1> Skills </h1>
-        </>
+        <SkillStyles>
+            <NavBar />
+                
+            <FooterMenu />
+        </SkillStyles>
     )
 }

@@ -1,9 +1,11 @@
 import { styled } from '@stitches/react';
+import BackgroundHomePage from '../../assets/BackgroundHomePage.svg'
 
-export const Container = styled(
+export const PageLandStyles = styled(
   'body', {
-    backgroundColor: 'gainsboro',
-    
+    backgroundImage: 'BackgroundHomePage',
+    width: '100%',
+    height: '100%',
     },
   );
   

@@ -1,6 +1,6 @@
 import { styled } from '@stitches/react';
 
-export const Container = styled(
+export const AboutStyle = styled(
   'body', {
     backgroundColor: 'gainsboro',
     

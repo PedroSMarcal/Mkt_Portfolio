@@ -1,4 +1,4 @@
-import IconAndLinks from '../../IconsAndButtons'
+import IconAndLinks from '../../IconsAndButtons/FooterIcons'
 import { Container } from './styled'
 
 export default function FooterMenu (){ 

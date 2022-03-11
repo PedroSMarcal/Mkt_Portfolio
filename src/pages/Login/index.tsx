@@ -1,11 +1,15 @@
 import React from "react";
+import { LoginStyled } from "./style";
 
 export default function(){
     return (
-    <>
-        <h1>
-            Login
-        </h1>
-    </>
+    <LoginStyled>
+        Login
+        <input type="text" placeholder="login"/>
+        Password
+        <input type="text" placeholder="password"/>
+
+        <button> Login </button>
+    </LoginStyled>
     )
 }
