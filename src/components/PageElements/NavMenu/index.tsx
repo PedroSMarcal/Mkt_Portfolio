@@ -4,7 +4,7 @@ import { NavStyle } from './styled'
 
 export default function NavBar(){
     return (
-        <NavStyle>
+        <div style={divStyle}>
             <nav>
                 <li>
                     <NavLink to={'/'}>Landing Page</NavLink>
@@ -22,6 +22,12 @@ export default function NavBar(){
                     <NavLink to={'/login'}>Login</NavLink>
                 </li>
             </nav>
-        </NavStyle>
+        </div>
     )
 }   
+
+const divStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    
+}
