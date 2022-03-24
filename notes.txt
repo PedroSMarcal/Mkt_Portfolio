@@ -1,0 +1,11 @@
+to start the node use
+npm init -y or yarn init -y 
+
+then install the express (will take care from our routes);
+yarn add express
+
+now install the typescript and ts-node-dev(help to compile the typescript to javascript)
+yarn add typescript ts-node-dev @types/express -D
+
+then start the typescript
+yarn tsc --init  ||  npx tsc --init
